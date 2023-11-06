@@ -1,0 +1,21 @@
+<h2 class="text-center">Pipes</h2>
+<h3>Decimal pipe</h3>
+<p>number  - {{ num }}</p>
+<p>PI - {{ PI }}</p>
+<p>PI - {{ PI | number: "1.1-2"}}</p>
+<p>PI - {{ PI | number: "5.1-2"}}</p>
+<p>number - {{ num | percent}}</p>
+<h3>String pipe</h3>
+<p>string - {{ str }}</p>
+<p>string - {{ str | uppercase }}</p>
+<p>string - {{ str | lowercase }}</p>
+<p>string - {{ str | titlecase }}</p>
+<h3>Date Pipe</h3>
+<p>date - {{ date }}</p>
+<p>date - {{ date | date: "hh:mm:ss"}}</p>
+<p>date - {{ date | date: "d/M/y hh:mm:ss"}}</p>
+<h3>Currency pipe</h3>
+<p>currency - {{ num * 100 | currency }}</p>
+<p>{{num * 100 | currency: 'EUR'}}</p>
+
+
